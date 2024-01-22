@@ -3,8 +3,7 @@
 void printWelcomeMenu();
 void printOptions();
 void add();
-
-
+void subtract();
 void main() {
 
 	printWelcomeMenu();
@@ -20,6 +19,8 @@ void main() {
 	{
 	case 1:
 		add();
+	case 2:
+		subtract();
 	}
 
 }
@@ -44,4 +45,13 @@ void add() {
 	scanf_s("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
+}
+void subtract() {
+	int num1, num2, result;
+	num1 = 0;
+	num2 = 42;
+	result = num1 - num2;
+	printf("\nThe Difference between %i and %i = %i ", num1, num2, result);
+
+
 }
